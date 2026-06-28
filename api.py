@@ -1,5 +1,6 @@
 from datetime import datetime
 from fastapi import FastAPI
+from fastapi import HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -67,6 +68,7 @@ def get_history():
 
 @app.post("/analyze")
 def analyze(data: Telemetry):
+ try:
 
     risk = predict_risk(
         data.latency,
@@ -93,6 +95,7 @@ def analyze(data: Telemetry):
     parsed_report = parse_report(report)
 
     response = {
+        "status": "success",
         "network_status": status,
         "predicted_risk": risk,
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -114,3 +117,8 @@ def analyze(data: Telemetry):
     save_report(response)
 
     return response
+ except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Analysis failed: {str(e)}"
+        )
