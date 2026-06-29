@@ -1,6 +1,35 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Virtual environments
 .venv/
 venv/
+env/
+
+# Environment variables
 .env
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Generated outputs
 outputs/
+history/
+
+# ML model (if generated locally)
+ml/risk_model.pkl
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
