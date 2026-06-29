@@ -1,0 +1,401 @@
+GhostPilot Frontend - Phase 1
+
+Project Overview
+
+Build a React + Vite frontend for GhostPilot, an AI-powered Predictive Network Monitoring Dashboard developed for the ISRO Hackathon.
+
+Important: Build only the frontend. Do not generate any backend or server code.
+
+The goal is to create a modern, responsive, production-quality dashboard that resembles an ISRO Mission Control Center for monitoring network telemetry and AI-generated predictions.
+
+Tech Stack
+
+Use:
+
+React
+
+Vite
+
+Tailwind CSS
+
+React Router
+
+Recharts
+
+Lucide React Icons
+
+Axios (prepare but do not connect)
+
+Functional Components
+
+React Hooks
+
+Theme
+
+Create a futuristic Mission Control Dashboard.
+
+Colors
+
+Background:
+
+Deep Navy
+
+Space Black
+
+Accent Colors:
+
+ISRO Orange
+
+Cyan
+
+White
+
+Soft Blue
+
+Status Colors:
+
+Healthy → Green
+
+Warning → Yellow
+
+Critical → Red
+
+Avoid cyberpunk or hacker aesthetics.
+
+The dashboard should look clean, premium, professional, and suitable for scientists monitoring mission-critical infrastructure.
+
+Layout
+
+Create a responsive dashboard with the following layout.
+
+-------------------------------------------------
+
+Navbar
+
+-------------------------------------------------
+
+Status Cards
+
+-------------------------------------------------
+
+Telemetry Form
+
+AI Analysis
+
+-------------------------------------------------
+
+Charts
+
+-------------------------------------------------
+
+History Sidebar
+
+-------------------------------------------------
+
+Footer
+
+-------------------------------------------------
+
+Desktop-first.
+
+Responsive for laptops and tablets.
+
+Navigation Bar
+
+Include:
+
+GhostPilot logo
+
+Project Name
+
+Subtitle:
+
+AI-Powered Predictive Network Monitoring
+
+Right side:
+
+Connection Status
+
+Show:
+
+🟢 Backend Connected
+
+(use mock state)
+
+Dashboard Cards
+
+Create four cards.
+
+Card 1
+
+Network Status
+
+Possible values
+
+Healthy
+
+Warning
+
+Critical
+
+Color changes automatically.
+
+Card 2
+
+Predicted Risk
+
+Display as
+
+55%
+
+Large typography.
+
+Card 3
+
+AI Model
+
+Display
+
+Phi-3
+
+Card 4
+
+Last Analysis
+
+Display formatted timestamp.
+
+Telemetry Input Form
+
+Beautiful card.
+
+Fields:
+
+Latency (ms)
+
+Packet Loss (%)
+
+CPU Usage (%)
+
+All numeric.
+
+Large Analyze button.
+
+When clicked
+
+Show loading animation
+
+Disable button
+
+No backend connection.
+
+Just simulate loading.
+
+AI Analysis Panel
+
+Create reusable cards for
+
+Reason
+
+Possible Root Cause
+
+Potential Impact
+
+Recommended Actions
+
+Summary
+
+Each section must include
+
+Icon
+
+Heading
+
+Content
+
+Spacing
+
+Cards should support long AI responses.
+
+Charts
+
+Create
+
+Risk Trend Chart
+
+Line chart
+
+Mock previous risk scores.
+
+Network Health Chart
+
+Doughnut chart
+
+Mock percentages.
+
+Use Recharts.
+
+History Sidebar
+
+Create a sidebar showing previous analyses.
+
+Each item displays
+
+Time
+
+Risk
+
+Status
+
+Clicking an item should update the Analysis Panel using mock data.
+
+Alert Banner
+
+Top of dashboard.
+
+Automatically changes.
+
+Examples
+
+🟢 Healthy
+
+🟡 Warning
+
+🔴 Critical
+
+Loading Overlay
+
+When Analyze is clicked.
+
+Show
+
+AI Mission Control is analyzing telemetry...
+
+with animated spinner.
+
+After 2 seconds
+
+Populate dashboard using mock data.
+
+Mock Data
+
+Use local mock JSON.
+
+Example
+
+{
+  "status":"success",
+  "network_status":"Warning",
+  "predicted_risk":55,
+  "generated_at":"2026-06-28 23:56:16",
+  "model":"phi3",
+  "telemetry":{
+      "latency":45,
+      "packet_loss":2,
+      "cpu":60
+  },
+  "reason":"...",
+  "possible_root_cause":"...",
+  "potential_impact":"...",
+  "recommended_actions":"...",
+  "summary":"..."
+}
+
+Store mock history in React state.
+
+Components
+
+Generate reusable components.
+
+Navbar
+
+StatusCard
+
+AlertBanner
+
+TelemetryForm
+
+RiskGauge
+
+AnalysisPanel
+
+HistorySidebar
+
+TrendChart
+
+HealthChart
+
+LoadingOverlay
+
+Footer
+
+Folder Structure
+
+Create an organized project.
+
+src/
+
+components/
+
+pages/
+
+services/
+
+hooks/
+
+assets/
+
+utils/
+
+data/
+
+App.jsx
+
+main.jsx
+
+UI Quality
+
+Use
+
+Glassmorphism
+
+Rounded cards
+
+Professional spacing
+
+Subtle hover effects
+
+Smooth transitions
+
+Responsive grid
+
+Minimal animations
+
+High readability
+
+Code Quality
+
+Generate production-ready React code.
+
+Requirements
+
+Reusable components
+
+No duplicate code
+
+Clean architecture
+
+Proper hooks
+
+Well-structured folders
+
+Readable styling
+
+Important
+
+Do not connect to any backend yet.
+
+Do not use real APIs.
+
+Use only mock data while ensuring the application behaves exactly like a working AI dashboard.
+
+The output should be a fully navigable, clickable, responsive, interactive frontend that is ready for backend integration in the next phase.

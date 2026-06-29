@@ -1,0 +1,375 @@
+GhostPilot Frontend – Phase 2
+
+You are working on an existing React + Vite + Tailwind CSS project called GhostPilot.
+
+Your task is to upgrade the existing frontend into a polished, interactive, hackathon-quality application.
+
+Do NOT regenerate the project structure.
+
+Do NOT change the folder hierarchy unless absolutely necessary.
+
+Do NOT add backend code.
+
+Use the existing components and improve them.
+
+Primary Goal
+
+Transform the UI into a professional ISRO Mission Control Dashboard that looks presentation-ready and behaves like a real application using mock data only.
+
+Everything should be clickable and interactive.
+
+Improve the Overall Design
+
+Upgrade the UI with:
+
+Better spacing
+
+Better typography
+
+Better alignment
+
+Consistent card sizes
+
+Better color palette
+
+Better responsive layout
+
+Smooth animations
+
+The interface should look premium.
+
+Avoid excessive effects.
+
+Navigation Bar
+
+Improve the navbar.
+
+Include
+
+GhostPilot Logo
+
+Project Name
+
+Subtitle
+
+Current Time
+
+Backend Status Indicator (mock)
+
+Theme Toggle (Dark/Light)
+
+Theme switching should work.
+
+Status Cards
+
+Improve the four dashboard cards.
+
+Each card should have:
+
+Icon
+
+Animated number
+
+Hover effect
+
+Soft shadow
+
+Glassmorphism
+
+Cards:
+
+Network Status
+
+Predicted Risk
+
+AI Model
+
+Last Analysis
+
+Status color should automatically change:
+
+Healthy → Green
+
+Warning → Yellow
+
+Critical → Red
+
+Telemetry Form
+
+Improve the form.
+
+Requirements
+
+Input validation
+
+Numeric only
+
+Min/Max values
+
+Placeholder text
+
+Icons
+
+Better labels
+
+Responsive layout
+
+When Analyze is clicked:
+
+Disable button
+
+Show spinner
+
+Show loading overlay
+
+After loading
+
+Update the dashboard using mock data.
+
+Risk Gauge
+
+Replace plain percentage with a beautiful circular gauge.
+
+Color changes according to risk.
+
+0–30
+
+Green
+
+31–70
+
+Yellow
+
+71–100
+
+Red
+
+Animate when value changes.
+
+AI Analysis Section
+
+Improve each section.
+
+Each card should have:
+
+Title
+
+Icon
+
+Colored left border
+
+Scrollable content
+
+Copy button
+
+Collapse/Expand button
+
+Nice spacing
+
+Sections:
+
+Reason
+
+Root Cause
+
+Potential Impact
+
+Recommendations
+
+Summary
+
+Charts
+
+Improve both charts.
+
+Risk Trend
+
+Animated line chart
+
+Smooth transitions
+
+Tooltips
+
+Grid
+
+Network Health
+
+Doughnut chart
+
+Legend
+
+Animated loading
+
+Use mock historical data.
+
+History Panel
+
+Upgrade the history sidebar.
+
+Each analysis should display:
+
+Timestamp
+
+Risk Score
+
+Status Badge
+
+Small Icon
+
+Hover Effect
+
+Clicking an item should immediately load that report into the dashboard.
+
+Add:
+
+Search
+
+Sort
+
+Newest First
+
+Oldest First
+
+Alert Banner
+
+Improve the alert banner.
+
+Examples
+
+🟢 Network Healthy
+
+🟡 Warning Detected
+
+🔴 Critical Issue
+
+Banner should animate when status changes.
+
+Loading Experience
+
+Create a professional loading overlay.
+
+Display
+
+AI Mission Control is analyzing telemetry...
+
+Show:
+
+Animated satellite icon
+
+Progress animation
+
+Pulsing status indicator
+
+Fade-in/fade-out transition
+
+Micro Interactions
+
+Add subtle animations.
+
+Examples
+
+Hover cards
+
+Button ripple
+
+Smooth page transitions
+
+Animated counters
+
+Fade-in sections
+
+Slide-in history
+
+Avoid flashy effects.
+
+Responsiveness
+
+Optimize for
+
+Desktop
+
+Laptop
+
+Tablet
+
+Avoid horizontal scrolling.
+
+Cards should stack properly.
+
+Accessibility
+
+Improve usability.
+
+Keyboard navigation
+
+Focus states
+
+Readable contrast
+
+Accessible buttons
+
+ARIA labels where appropriate
+
+Mock Functionality
+
+Everything should work using mock data.
+
+When Analyze is clicked:
+
+Generate a new mock report.
+
+Update:
+
+Status Cards
+
+Charts
+
+Analysis Panel
+
+History
+
+Timestamp
+
+Risk Gauge
+
+Alert Banner
+
+without refreshing the page.
+
+Code Improvements
+
+Refactor if necessary.
+
+Requirements
+
+Reusable components
+
+Clean React hooks
+
+No duplicate code
+
+Well-organized state
+
+Reusable utility functions
+
+Meaningful comments
+
+Deliverables
+
+Return an improved, production-quality frontend that:
+
+Looks like an ISRO Mission Control dashboard
+
+Is fully interactive with mock data
+
+Has polished animations
+
+Is responsive
+
+Includes working charts
+
+Includes history management
+
+Includes theme switching
+
+Is ready for backend integration in the next phase without major structural changes.

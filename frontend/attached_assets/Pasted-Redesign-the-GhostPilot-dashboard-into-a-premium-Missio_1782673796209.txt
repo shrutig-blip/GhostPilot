@@ -1,0 +1,186 @@
+Redesign the GhostPilot dashboard into a premium Mission Control style interface suitable for an ISRO Hackathon finalist project.
+
+The design should NOT resemble a generic SaaS dashboard.
+
+Instead it should feel like a real Satellite Network Operations Center (NOC).
+
+Overall Style:
+- Dark space-inspired UI
+- ISRO mission control aesthetics
+- Blue, cyan, green and amber accents
+- Minimalistic
+- Highly technical
+- Glassmorphism only where appropriate
+- Smooth micro animations
+- Modern typography
+- Responsive layout
+
+Header:
+- GhostPilot logo
+- Subtitle:
+  "ISRO AI Network Copilot"
+- Mission Name
+- Backend Status
+- Current Time (UTC)
+- Mission Elapsed Timer
+- Theme Toggle
+
+Top Alert Banner:
+Animated alert bar showing:
+Healthy (green pulse)
+Warning (amber pulse)
+Critical (red pulse)
+
+Primary Dashboard Cards:
+- Network Status
+- AI Confidence
+- Risk Score
+- AI Model
+- Last Analysis
+- Active Satellite Count
+- Ground Station Status
+
+Telemetry Section:
+Show telemetry cards instead of plain inputs.
+
+Latency
+Packet Loss
+CPU Usage
+Predicted Risk
+
+Each card should display:
+Current Value
+Status Badge
+Normal Range
+
+Mission Topology Panel:
+Animated topology:
+
+Satellite
+↓
+
+Ground Station
+↓
+
+Core Router
+↓
+
+Mission Control
+↓
+
+GhostPilot AI
+
+Each node changes color based on health.
+
+Live Telemetry Feed:
+Scrollable console showing timestamped telemetry events.
+
+Example:
+
+23:41:10
+Telemetry Received
+
+23:41:11
+Rule Engine Complete
+
+23:41:12
+AI Analysis Started
+
+23:41:15
+Report Generated
+
+AI Analysis Report:
+Display sections as collapsible cards:
+
+Summary
+
+Reason
+
+Possible Root Cause
+
+Potential Impact
+
+Recommended Actions
+
+Each card should have a different accent color.
+
+Add AI Confidence progress bar.
+
+Recommended Actions:
+Display as checklist with action priority badges.
+
+Analysis History:
+Keep previous analyses with:
+Status
+Risk
+Timestamp
+
+Clicking an item should restore the report.
+
+Charts:
+Improve charts using smooth animations.
+
+Show:
+
+Risk Trend
+
+CPU Trend
+
+Latency Trend
+
+Packet Loss Trend
+
+System Health Distribution
+
+Add Tooltips.
+
+Mission Statistics Panel:
+Display:
+
+Telemetry Processed
+
+Packets/sec
+
+Satellites Online
+
+Ground Stations
+
+Average Latency
+
+Average CPU
+
+Average Packet Loss
+
+Recent Alerts
+
+Mission Log:
+A terminal-like scrolling console showing:
+
+[INFO]
+[WARNING]
+[CRITICAL]
+
+with timestamps.
+
+Footer:
+Offline AI
+Phi-3 via Ollama
+No Internet Required
+Powered by Local AI
+
+General Improvements:
+No empty spaces.
+
+Better spacing.
+
+Better hierarchy.
+
+Professional icons.
+
+Hover animations.
+
+Loading skeletons.
+
+Smooth transitions.
+
+Keep the interface realistic and suitable for an ISRO satellite monitoring application rather than a generic AI dashboard.
